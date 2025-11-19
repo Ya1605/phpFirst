@@ -12,7 +12,8 @@
         <?php echo "how was your day" ?>
         <hr>
 
-        <?php $oneConst = 10; ?>
+        <?php $oneConst = 10;
+        echo $oneConst ?>
     </h2>
 </body>
 
