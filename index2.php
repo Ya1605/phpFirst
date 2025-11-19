@@ -36,8 +36,8 @@
         ?>
 
         <?php
-        $GLOBALS = 449;
-        var_dump($GLOBALS); ?>
+        $GLOBALS['myValue'] = 449;
+        echo $GLOBALS('myValue'); ?>
     </h2>
 </body>
 
