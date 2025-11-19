@@ -36,7 +36,7 @@
         ?>
 
         <?php
-        $GLOBALS['myValue'] = 449;
+        $GLOBALS['myValue'] = "449";
         echo $GLOBALS('myValue'); ?>
     </h2>
 </body>
