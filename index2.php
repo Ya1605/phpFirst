@@ -34,6 +34,10 @@
         unset($name);
         var_dump($name);
         ?>
+
+        <?php
+        $GLOBALS = 449;
+        var_dump($GLOBALS); ?>
     </h2>
 </body>
 
