@@ -18,7 +18,7 @@
         $oneConst = 10;
         echo $oneConst;
 
-        $secConst = true;
+        $secConst = 20;
         var_dump($secConst);
         ?>
     </h2>
