@@ -11,6 +11,8 @@
     <h2>
         <?php echo "how was your day" ?>
         <hr>
+
+        <?php $oneConst = 10; ?>
     </h2>
 </body>
 
