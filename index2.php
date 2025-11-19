@@ -41,13 +41,16 @@
 
         <?php
         $const = "how are you";
-        $Const = "how are you";
-        $CONST = "how are you";
+        echo strtolower($const); ?>
+        <hr>
+        <?php $Const = "how are you";
+        echo strtoupper($Const); ?>
+        <hr>
+        <?php $CONST = "how are you";
+        echo ucfirst($CONST); ?>
+        <hr>
 
-        echo strtolower($const);
-        echo strtoupper($Const);
-        echo mb_strtolower($CONST);
-        ?>
+
     </h2>
 </body>
 
