@@ -12,8 +12,15 @@
         <?php echo "how was your day" ?>
         <hr>
 
-        <?php $oneConst = 10;
-        echo $oneConst ?>
+        <?php
+        //змінна
+
+        $oneConst = 10;
+        echo $oneConst;
+
+        $secConst = true;
+        var_dump($secConst);
+        ?>
     </h2>
 </body>
 
