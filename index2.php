@@ -38,6 +38,16 @@
         <?php
         $GLOBALS['myValue'] = "449";
         echo $GLOBALS['myValue']; ?>
+
+        <?php
+        $const = "how are you";
+        $Const = "how are you";
+        $CONST = "how are you";
+
+        echo $const;
+        echo $Const;
+        echo $CONST;
+        ?>
     </h2>
 </body>
 
