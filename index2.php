@@ -16,10 +16,23 @@
         //змінна
 
         $oneConst = 10;
-        echo $oneConst;
+        echo $oneConst;   //просто значення
 
         $secConst = 20;
-        var_dump($secConst);
+        var_dump($secConst);   //тип і значення
+        ?>
+
+        <?php
+        //присвоєння значення  
+        $name = "Alex";
+        echo ($name);
+
+        $isNameSet = isset($name); //перевірка на наявність
+        var_dump($isNameSet);
+
+        //видалення
+        unset($name);
+        var_dump($name);
         ?>
     </h2>
 </body>
