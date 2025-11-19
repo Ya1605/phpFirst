@@ -44,9 +44,9 @@
         $Const = "how are you";
         $CONST = "how are you";
 
-        echo $const;
-        echo $Const;
-        echo $CONST;
+        echo strtolower($const);
+        echo strtoupper($Const);
+        echo mb_strtolower($CONST);
         ?>
     </h2>
 </body>
