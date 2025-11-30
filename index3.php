@@ -30,5 +30,14 @@ echo $fullname;
 $num = 10;
 $increase = $num ** 4;
 echo $increase;
+?>
+
+<hr>
+<?php
+$c = 4;
+$d = 5;
+$sumOfSquares = ($c ** 2) + ($d ** 2);
+
+echo "сума квадратів дорівнює $sumOfSquares";
 
 ?>
