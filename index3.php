@@ -23,5 +23,12 @@ $w1 = 'Hello';
 $w2 = 'my sweet';
 $fullname = $w1 . " " . $w2;
 echo $fullname;
+?>
+<hr>
+
+<?php
+$num = 10;
+$increase = $num ** 4;
+echo $increase;
 
 ?>
