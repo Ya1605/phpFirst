@@ -9,10 +9,19 @@ $b = 2;
 $sum_a_b = $a * $b;
 echo $sum_a_b; ?>
 
-<br>
+<hr>
 <?php
 $a = 19;
 $b = 2;
 $sum_a__b = $a + $b;
 echo $sum_a__b;
+?>
+
+<hr>
+<?php
+$w1 = 'Hello';
+$w2 = 'my sweet';
+$fullname = $w1 . " " . $w2;
+echo $fullname;
+
 ?>
