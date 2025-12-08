@@ -55,7 +55,7 @@ if ($num % 2 == 0 && $num % 3 == 0) {
 $number = rand(28, 29);
 
 echo "Дальность выстрела: $number<br>";
-if ($number <= 27 && $number >= 30) {
+if ($number <= 27 && $number <= 30) {
     echo "попал";
 } else {
     echo "не попал";
