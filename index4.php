@@ -52,7 +52,7 @@ if ($num % 2 == 0 && $num % 3 == 0) {
 
 <hr>
 <?php
-$number = rand(28);
+$number = rand(28, 29);
 
 echo "Дальность выстрела: $number<br>";
 if ($number >= 27 && $number <= 30) {
