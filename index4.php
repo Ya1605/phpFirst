@@ -61,3 +61,7 @@ if ($number <= 27 && $number >= 30) {
     echo "не попал";
 }
 ?>
+<hr>
+<?php
+
+?>
