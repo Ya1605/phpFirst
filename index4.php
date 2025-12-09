@@ -75,3 +75,27 @@ if ($min > 1 && $min < 15) {
 }
 ?>
 <hr>
+<?php
+$num = rand(1, 4);
+echo "num = $num\n";
+
+switch ($num) {
+    case 1:
+        $result = "winter";
+        break;
+    case 2:
+        $result = "spring";
+        break;
+    case 3:
+        $result = "summer";
+        break;
+    case 4:
+        $result = "autumn";
+        break;
+    default:
+        "ERROR";
+        break;
+}
+
+echo $result;
+?>
