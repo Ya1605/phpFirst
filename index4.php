@@ -99,3 +99,17 @@ switch ($num) {
 
 echo $result;
 ?>
+<hr>
+<?php
+$num = 3;
+if ($num == 1) {
+    echo "Now is winter";
+} elseif ($num == 2) {
+    echo "Now is spring";
+} elseif ($num == 3) {
+    echo "Now is summer";
+} else {
+    echo "Now is autumn";
+}
+
+?>
