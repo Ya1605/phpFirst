@@ -1,7 +1,7 @@
 <?php
 $arr = ['Привет, ', 'мир', '!'];
 
-$newArr = implode (',', $arr);
+$newArr = implode('', $arr);
 
 print_r ($newArr);
 ?>
