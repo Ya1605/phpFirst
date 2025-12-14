@@ -35,3 +35,12 @@ $result = $array[0] * $array[1] + $array[2] * $array[3];
 
 echo $result;
 ?>
+
+<hr>
+<?php
+$arr = [
+    'cms' => ['joomla', 'wordpress', 'drupal'],
+    'colors' => ['blue' => 'голубой', 'red' => 'красный', 'green' => 'зеленый']
+];
+echo 'Мой любимый цвет' . $arr(['colors']['green']);
+?>
