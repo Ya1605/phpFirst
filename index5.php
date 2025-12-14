@@ -48,8 +48,8 @@ echo 'Мой любимый цвет' . $arr['colors']['green'];
 
 <hr>
 <?php
-$lang = 'ru';
-$day = 4;
+$lang = 'en';
+$day = 6;
 
 $days = [
     'ru' => [
