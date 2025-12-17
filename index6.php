@@ -18,7 +18,7 @@ $arr = [
 ];
 
 foreach ($arr as $name => $salary) {
-    echo $name . '- зарплата' . $salary . '-доларів<br>';
+    echo $name . '- зарплата-' . $salary . '-доларів<br>';
 }
 
 ?>
@@ -31,6 +31,15 @@ for ($i = 1; $i <= 100; $i++) {
 }
 
 echo $sum;
+?>
+<hr>
+<?php
+$arr = [1, 2, 5, 9, 4, 13, 4, 10];
 
-
+foreach ($arr as $num) {
+    if ($num == 4); {
+        echo 'Есть!';
+        break;
+    }
+}
 ?>
