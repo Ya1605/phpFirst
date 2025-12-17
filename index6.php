@@ -18,7 +18,19 @@ $arr = [
 ];
 
 foreach ($arr as $name => $salary) {
-    echo $name . 'зарплата' . $salary . 'доларів<br>';
+    echo $name . '- зарплата' . $salary . '-доларів<br>';
 }
+
+?>
+<hr>
+<?php
+$sum = 0;
+for ($i = 1; $i <= 100; $i++) {
+
+    echo $sum += $i;
+}
+
+echo $sum;
+
 
 ?>
