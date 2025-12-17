@@ -27,7 +27,7 @@ foreach ($arr as $name => $salary) {
 $sum = 0;
 for ($i = 1; $i <= 100; $i++) {
 
-    echo $sum += $i;
+    $sum += $i;
 }
 
 echo $sum;
