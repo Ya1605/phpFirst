@@ -72,7 +72,7 @@ echo "кількість разів - $count";
 <?php
 $array = [2, -10, 56, -4];
 $sumArr = 0;
-foreach ($arr as $value) {
+foreach ($array as $value) {
     if ($value > 0) {
         $sumArr += $value;
     }
