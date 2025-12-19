@@ -71,12 +71,12 @@ echo "кількість разів - $count";
 <hr>
 <?php
 $array = [2, -10, 56, -4];
-$sum = 0;
+$sumArr = 0;
 foreach ($arr as $value) {
     if ($value > 0) {
-        $sum += $value;
+        $sumArr += $value;
     }
 }
 
-echo $sum;
+echo $sumArr;
 ?>
