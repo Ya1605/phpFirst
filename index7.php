@@ -20,3 +20,19 @@ function rgb($num1 = 0, $num2 = 0, $num3 = 0)
 echo rgb(12, 34, 71);
 
 ?>
+<hr>
+
+<?php
+function avg(array $numbers)
+
+{
+    if (count($numbers) === 0) {
+        return 0;
+    }
+
+    return array_sum($numbers) / count($numbers);
+}
+
+echo avg([10, 20, 30, 40]);
+
+?>
