@@ -9,9 +9,9 @@ function concat($numb, $value){
 echo concat(2,5);
 ?>
 <hr>
-<?php 
+<?php
 
-function rgb(number $num1=0, number $num2=0, number $num3=0)
+function rgb($num1 = 0, $num2 = 0, $num3 = 0)
 {
 return rgb($num1, $num2, $num3);
 
