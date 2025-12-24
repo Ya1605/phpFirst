@@ -36,3 +36,14 @@ function avg(array $numbers)
 echo avg([10, 20, 30, 40]);
 
 ?>
+
+<?php
+
+function myNumber($key1, $key2, $key3)
+{
+
+    return ($key1 - $key2) / $key3;
+}
+
+echo myNumber(10, 20, 30);
+?>
