@@ -47,3 +47,22 @@ function myNumber($key1, $key2, $key3)
 
 echo myNumber(10, 20, 30);
 ?>
+
+<?php
+function dayOfWeek($dayNumber)
+{
+
+    $days = [
+        1 => 'Понедельник',
+        2 => 'Вторник',
+        3 => 'Среда',
+        4 => 'Четверг',
+        5 => 'Пятница',
+        6 => 'Суббота',
+        7 => 'Воскресенье'
+    ];
+    return $days($dayNumber);
+}
+
+echo dayOfWeek(3);
+?>
