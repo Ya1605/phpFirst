@@ -61,7 +61,8 @@ function dayOfWeek($dayNumber)
         6 => 'Суббота',
         7 => 'Воскресенье'
     ];
-    return $days($dayNumber);
+
+    return $days[$dayNumber];
 }
 
 echo dayOfWeek(3);
