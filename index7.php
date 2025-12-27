@@ -47,7 +47,7 @@ function myNumber($key1, $key2, $key3)
 
 echo myNumber(10, 20, 30);
 ?>
-
+<br>
 <?php
 function dayOfWeek($dayNumber)
 {
@@ -66,4 +66,26 @@ function dayOfWeek($dayNumber)
 }
 
 echo dayOfWeek(3);
+?>
+
+<?php
+function getKeys(array $arr)
+{
+
+    return array_keys($arr);
+}
+$data = [
+    'name' => 'Anna',
+    'age' => 22,
+    'city' => 'Kyiv'
+];
+
+$result = getKeys($data);
+print_r($result);
+?>
+<hr>
+<?php
+
+
+
 ?>
