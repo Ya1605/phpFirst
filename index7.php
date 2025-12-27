@@ -86,6 +86,10 @@ print_r($result);
 <hr>
 <?php
 
+function htmlWrap($text, $teg)
+{
+    return "<$teg>$text<$teg>";
+}
 
-
+echo htmlWrap("Hello", "p");
 ?>
