@@ -23,7 +23,7 @@ function rgb($r = 0, $g = 0, $b = 0)
 {
     return sprintf("rgb(%d,%d,%d)", $r, $g . $b);
 }
-echo $rgb(23, 100, 300);
+echo rgb(23, 100, 300);
 ?>
 <?php
 $date = '31-12-2030';
