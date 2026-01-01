@@ -46,3 +46,14 @@ print_r($result);
 ?>
 
 <hr>
+<hr>
+<?php
+
+function countWord($string)
+{
+    return str_word_count($string);
+}
+
+echo countWord("Hello my dear friend");
+
+?>
