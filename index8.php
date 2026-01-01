@@ -11,9 +11,17 @@ function randNumber($length)
     $result = '';
 
     for ($i = 0; $i < $length; $i++) {
-        $chars[rand(0, strlen($chars) - 1)];
+        $result .= $chars[rand(0, strlen($chars) - 1)];
     }
 
     return $result;
 }
+?>
+
+<?php
+function rgb($r = 0, $g = 0, $b = 0)
+{
+    return sprintf("rgb(%d,%d,%d)", $r, $g . $b);
+}
+echo $rgb(23, 100, 300);
 ?>
