@@ -41,8 +41,8 @@ function splitArray($array, $size)
 
 $arr = [123, 22, 34, 456, 56, 78, 709];
 $result = splitArray($arr, 3);
-return $result;
-echo $result;
+
+print_r($result);
 ?>
 
 <hr>
