@@ -30,5 +30,14 @@ $date = '31-12-2030';
 $newDate = DateTime::createFromFormat('d-m-Y', $date)->format('Y.m.d');
 echo $newDate;
 
+?>
+<?php
+function splitArray($array, $size)
+{
+    return array_chunk($array, $size);
+}
 
+$arr = [123, 22, 34, 456, 56, 78, 709];
+$result = splitArray($arr, 3);
+return $result;
 ?>
