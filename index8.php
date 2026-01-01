@@ -21,7 +21,7 @@ function randNumber($length)
 <?php
 function rgb($r = 0, $g = 0, $b = 0)
 {
-    return sprintf("rgb(%d,%d,%d)", $r, $g . $b);
+    return sprintf("rgb(%d,%d,%d)", $r, $g, $b);
 }
 echo rgb(23, 100, 300);
 ?>
