@@ -25,6 +25,7 @@ function rgb($r = 0, $g = 0, $b = 0)
 }
 echo rgb(23, 100, 300);
 ?>
+<hr>
 <?php
 $date = '31-12-2030';
 $newDate = DateTime::createFromFormat('d-m-Y', $date)->format('Y.m.d');
