@@ -57,3 +57,15 @@ function countWord($string)
 echo countWord("Hello my dear friend");
 
 ?>
+<hr>
+<?php
+function newString($array)
+{
+
+    return strtolower($array);
+}
+
+$arr = ["hello", "how", "are", "you"];
+$res = newString($arr);
+print_r($res);
+?>
