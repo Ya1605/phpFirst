@@ -78,7 +78,7 @@ function myShuffle($arr)
 {
 
     $newArr = $arr;
-    shuffle($arr);
+    shuffle($newArr);
     return $newArr;
 }
 
