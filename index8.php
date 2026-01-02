@@ -71,3 +71,19 @@ $arr = ["hello", "how", "are", "you"];
 $res = newString($arr);
 print_r($res);
 ?>
+<hr>
+<?php
+
+function myShuffle($arr)
+{
+
+    $newArr = $arr;
+    shuffle($arr);
+    return $newArr;
+}
+
+$nerArMy = [1, 2, 3, 4, 5];
+$result = myShuffle($nerArMy);
+print_r($result);
+
+?>
