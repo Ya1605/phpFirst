@@ -62,7 +62,9 @@ echo countWord("Hello my dear friend");
 function newString($array)
 {
 
-    return strtolower($array);
+    return array_map(function ($item) {
+        return ucfirst(strtolower($item));
+    }, $array);
 }
 
 $arr = ["hello", "how", "are", "you"];
