@@ -39,6 +39,7 @@ class Calculator
 }
 $mycalculate = new Calculator;
 echo $mycalculate->add(5, 4);
-echo $mycalculate->divide(10, 20);
+echo "<hr>";
+echo $mycalculate->divide(40, 20);
 
 ?>
