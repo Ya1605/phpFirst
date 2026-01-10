@@ -78,5 +78,4 @@ $lengthtext = new MaxText;
 
 echo $lengthtext->longer("hello world");
 
-
 ?>
