@@ -60,5 +60,23 @@ $shortener = new NameShorter;
 echo $shortener->shorter("Anastasia");
 
 
+?>
+echo "
+<hr>";
+<?php
+class MaxText
+{
+    public $length = 6;
+    public function longer($text)
+    {
+
+        return substr($text, 1, $this->length);
+    }
+}
+
+$lengthtext = new MaxText;
+
+echo $lengthtext->longer("hello world");
+
 
 ?>
