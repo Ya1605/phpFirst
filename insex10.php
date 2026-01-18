@@ -53,14 +53,15 @@ return str_ireplace(
     $description
 );
 }
+}
 
-$article = new Article(
+$a1 = new Article(
     'Це дуже довгий заголовок...',
     'Це було ужасно і повний кошмар.',
     'іванов іван іванович'
 );
 
-echo $article->title . PHP_EOL;
-echo $article->description . PHP_EOL;
-echo $article->author;
+echo $a1->title . PHP_EOL;
+echo $a1->description . PHP_EOL;
+echo $a1->author;
 ?>
