@@ -95,9 +95,9 @@ return $allNames;
 
 }
 
-$tournir = new Cybertour(); 
-$tournir->getAllPlayersName("Ivan", "Ivanov");
-$tournir->getAllPlayersName("Anna", "Popova");
+$tournir = new Cybertour();
+$tournir->addPlayer("Ivan", "Ivanov");
+$tournir->addPlayer("Anna", "Popova");
 
 echo Cybertour::Name
 print_r($tournir->getAllPlayersName());
