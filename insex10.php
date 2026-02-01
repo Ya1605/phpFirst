@@ -65,3 +65,40 @@ echo $a1->title . PHP_EOL;
 echo $a1->description . PHP_EOL;
 echo $a1->author;
 ?>
+
+<?php 
+
+class Cybertour{
+
+public const Name  = "Tournir";
+
+private array $players = [];
+
+public function addPlayer (string $name, string $surname): void{
+
+$this->players[]=[
+    'name' => $name,
+    'surname' => $surname
+];
+}
+
+public function getAllPlayersName():array{
+
+$allNames = [];
+
+foreach($this ->players as $player){
+    $allNames[] = $player['name']. ' ' . $player['surname'];
+}
+
+return $allNames;
+}
+
+}
+
+$tournir = new Cybertour(); 
+$tournir->getAllPlayersName("Ivan", "Ivanov");
+$tournir->getAllPlayersName("Anna", "Popova");
+
+echo Cybertour::Name
+print_r($tournir->getAllPlayersName());
+?>
