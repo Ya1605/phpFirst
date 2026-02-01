@@ -99,6 +99,6 @@ $tournir = new Cybertour();
 $tournir->addPlayer("Ivan", "Ivanov");
 $tournir->addPlayer("Anna", "Popova");
 
-echo Cybertour::Name
+echo Cybertour::Name;
 print_r($tournir->getAllPlayersName());
 ?>
