@@ -1,58 +1,61 @@
 <?php
 
 
-class Article{
-
-public const MAX_TITLE_LENGTH = 255;
-
-private const FORBIDDEN_WORDS = [
-            'плохо',
-            'ужасно',
-            'кошмар'
-
-];
-
-public string $title;
-public string $description;
-public string $author;
-
-public function __construct(string $title, string $description, string $author)
+class Article
 {
-   $this->title = $this->prepareTitle($title);
-   $this-> description = self::censorDescription($description);
-   $this->author = $this->prepareAuthor($author);
-}
 
-private function prepareTitle(string $title): string{
+    public const MAX_TITLE_LENGTH = 255;
 
-if (mb_strlen($title)> self::MAX_TITLE_LENGTH) {
+    private const FORBIDDEN_WORDS = [
+        'плохо',
+        'ужасно',
+        'кошмар'
 
-    return mb_substr($title, 0, self::MAX_TITLE_LENGTH);
-}
-return $title;
-}
+    ];
 
-private function prepareAuthor(string $author):string{
+    public string $title;
+    public string $description;
+    public string $author;
 
-$parts = explode(' ', mb_strtolower(trim($author)));
+    public function __construct(string $title, string $description, string $author)
+    {
+        $this->title = $this->prepareTitle($title);
+        $this->description = self::censorDescription($description);
+        $this->author = $this->prepareAuthor($author);
+    }
 
-foreach ($parts as $part) {
+    private function prepareTitle(string $title): string
+    {
 
-    $part = mb_convert_case($part, MB_CASE_TITLE, 'UTF-8');
-}
+        if (mb_strlen($title) > self::MAX_TITLE_LENGTH) {
 
-return implode(' ', $parts);
+            return mb_substr($title, 0, self::MAX_TITLE_LENGTH);
+        }
+        return $title;
+    }
 
-}
+    private function prepareAuthor(string $author): string
+    {
 
-private static function censorDescription(string $description):string{
+        $parts = explode(' ', mb_strtolower(trim($author)));
 
-return str_ireplace(
-    self ::FORBIDDEN_WORDS,
-    '***',
-    $description
-);
-}
+        foreach ($parts as $part) {
+
+            $part = mb_convert_case($part, MB_CASE_TITLE, 'UTF-8');
+        }
+
+        return implode(' ', $parts);
+    }
+
+    private static function censorDescription(string $description): string
+    {
+
+        return str_ireplace(
+            self::FORBIDDEN_WORDS,
+            '***',
+            $description
+        );
+    }
 }
 
 $a1 = new Article(
@@ -66,33 +69,35 @@ echo $a1->description . PHP_EOL;
 echo $a1->author;
 ?>
 
-<?php 
+<?php
 
-class Cybertour{
+class Cybertour
+{
 
-public const Name  = "Tournir";
+    public const Name  = "Tournir";
 
-private array $players = [];
+    private array $players = [];
 
-public function addPlayer (string $name, string $surname): void{
+    public function addPlayer(string $name, string $surname): void
+    {
 
-$this->players[]=[
-    'name' => $name,
-    'surname' => $surname
-];
-}
+        $this->players[] = [
+            'name' => $name,
+            'surname' => $surname
+        ];
+    }
 
-public function getAllPlayersName():array{
+    public function getAllPlayersName(): array
+    {
 
-$allNames = [];
+        $allNames = [];
 
-foreach($this ->players as $player){
-    $allNames[] = $player['name']. ' ' . $player['surname'];
-}
+        foreach ($this->players as $player) {
+            $allNames[] = $player['name'] . ' ' . $player['surname'];
+        }
 
-return $allNames;
-}
-
+        return $allNames;
+    }
 }
 
 $tournir = new Cybertour();
@@ -101,4 +106,41 @@ $tournir->addPlayer("Anna", "Popova");
 
 echo Cybertour::Name;
 print_r($tournir->getAllPlayersName());
+?>
+
+<?php
+class BookClub
+{
+
+    public const Club_Name = "BookingClub";
+
+    private array $participants = [];
+
+    public function addMember(string $name, string $surname): void
+    {
+
+        $this->participants[] = [
+            'name' => $name,
+            'surname' => $surname
+
+        ];
+    }
+
+    public function getAllMembers(): array
+    {
+
+        $allParticipants = [];
+        foreach ($this->participants as $participant) {
+            $allParticipants[] = $participant['name'] . ' ' . $participant['surname'];
+        }
+        return $allParticipants;
+    }
+}
+
+$bookClub = new BookClub;
+$bookClub->addMember('Hanna', 'Petrova');
+$bookClub->addMember('Stepan', 'Pilipov');
+
+echo BookClub::Club_Name;
+print_r($bookClub->getAllMembers());
 ?>
